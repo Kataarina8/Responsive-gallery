@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kreiranje responsive galerije</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial,sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-weight: 200;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            background-color: #5f92c9;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item h3 {
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+            padding: 10px 0; 
+            text-align: center;
+            width: 100%; 
+            margin: 0; 
+            border-radius: 0 0 8px 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        } 
+
+        @media screen and (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .container p:last-of-type {
+            margin-top: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery heading</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src= "placeholder-image.png" alt="Slika1">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 2">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 3">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 4">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 5">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 6" >
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 7">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 8">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 9">
+                <h3>Image title</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder-image.png" alt="Slika 10">
+                <h3>Image title</h3>
+            </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis sapien in justo vulputate, ac auctor felis vestibulum. Cras id sollicitudin orci, at cursus ipsum. Aliquam sagittis augue id dolor dictum dapibus. In accumsan interdum suscipit. Duis sollicitudin massa quis tortor ultrices porttitor non et magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque posuere purus euismod neque tristique dictum. Phasellus laoreet lectus vitae nibh feugiat volutpat. Nulla facilisi. Aliquam ut consectetur nisi. In hac habitasse platea dictumst. Cras imperdiet hendrerit risus, eget elementum enim sollicitudin condimentum. Maecenas magna tellus, aliquet et eleifend nec, vestibulum et tellus.</p>
+
+    </div>
+
+    
+</body>
+</html>
